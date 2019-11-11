@@ -1,13 +1,16 @@
----
 sudo: false
 language: ruby
 cache: bundler
 rvm:
-  - 2.6.5
+- 2.6.5
+
 before_install: gem install bundler -v 2.0.2
 
 deploy:
   provider: rubygems
-  api_key: "YOUR API KEY"
+  api_key:
+    secure: ca+G7zy/ysMlw+odJ+aAIfrRgyDJaWh51vb4BqEEW9zgUpQDbmFWNsER94KuOBAORKSoS6KRbHBT3TkFwyJThAymOIZYsh/jijAOlu66KkKTZE/MYdqJuGAsFf1Ru311I73UIGBBZFWQKpQiEpAY+R+K4FLWfcsPRTRf2TKSjjFm7UDVh5NemEQ5yMBu4U9BxAYyNuDyCq8lNC9531KtnBVVl9ijex9ObSO6lNDl49DlmMWgyG/NCvHrVJQdDFHQ+MTpDRt3iWmg8U/D7/xvNIkJl6ifFmZWcf+grvkCM+I/0QDSLCSmBBgxjg493BCK4glm0LDuc7QU1ebM3S74R3qQ0Wjppyuvzi2AkGyghtPrtY6rwo8IslSh5zUltjiEPYtR3ZLoe/AT+Xn8P18ZmQ2aedl7akq5vXNHGRa1KvbWAwT9r/oauiA/S1q+bgujaCH50l71ZpggF1g8T2QSI7kuNJGFXy1KFZXCxxDg+BFpAD9WJls/J8ix9ek21jwhUAqF2rtm/BttvkZQERwX4DdaX8zHybdFeRcviYVZWsi3g1TUu4AHN0yXZsAULLQ59UamAMe/8TkXNDBKcOo9ksMdugG1TJssAdcM/kuP0SGCpwHZ3m4tdq4/550iYWFiU0huGdTYVnXvQw3FvMImxTaMQ/DOwWRfsAEUoyJbnVw=
+  gem: gh-cards
   on:
     tags: true
+    repo: devopsmakers/gh-cards
