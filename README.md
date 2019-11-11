@@ -14,8 +14,11 @@ gem install gh-cards
 
 2. Configure your `~/.netrc` file with:
 ```
-
+machine api.github.com
+  login <<username>>
+  password <<access-token>> 
 ```
+and set it's permissions: `chmod 0600 ~/.netrc`
 
 ## Usage
 
