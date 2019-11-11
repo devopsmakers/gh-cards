@@ -8,6 +8,15 @@ Create HTML format cards from Github Issues for printing
 gem install gh-cards
 ```
 
+### Pre-requisites
+
+1. Create a Github Personal Access Token with **repo** access - https://github.com/settings/tokens/new
+
+2. Configure your `~/.netrc` file with:
+```
+
+```
+
 ## Usage
 
 The `gh-cards` cli tool is designed to be run inside a repo. It will create a
