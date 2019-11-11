@@ -1,0 +1,13 @@
+---
+sudo: false
+language: ruby
+cache: bundler
+rvm:
+  - 2.6.5
+before_install: gem install bundler -v 2.0.2
+
+deploy:
+  provider: rubygems
+  api_key: "YOUR API KEY"
+  on:
+    tags: true

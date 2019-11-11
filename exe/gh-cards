@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require "gh/cards/cli"
+
+Gh::Cards::CLI.start
