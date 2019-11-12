@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Cards for <%= @repo %></title>
+  <title>Cards for <%= repo %></title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -20,11 +20,11 @@
     <div class="row">
       <div class="col-12">
         <div class="card-deck">
-        <% @cards.each_slice(3) do |slice| %>
+        <% cards.each_slice(3) do |slice| %>
           <% slice.each do |card| %>
           <div class="card">
             <div class="card-header">
-              <%= @repo.split('/')[-1] %>
+              <%= repo.split('/')[-1] %>
             </div>
             <div class="card-body">
               <h4 class="card-title"><span class="font-weight-bold">#<%= card[:number] %></span> <%= card[:title] %></h4>
@@ -35,8 +35,8 @@
               <% if card[:labels].length > 0 %>
               <h6 class="text-secondary">Labels:</h6>
               <div class="small text-secondary test-lowercase">
-                <% for @label in card[:labels] %>
-                <%= @label[:name] %><br />
+                <% for label in card[:labels] %>
+                <%= label[:name] %><br />
                 <% end %>
               </div>
               <% end %>

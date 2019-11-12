@@ -13,7 +13,7 @@ module Gh
 
       desc "generate", "Generate your Github issue cards HTML file"
       def generate
-        Gh::Cards.generate options[:template],  options[:directory], options[:repo]
+        Gh::Cards.generate(options[:template], options[:directory], options[:repo])
       end
     end
   end
