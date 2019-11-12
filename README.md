@@ -16,7 +16,7 @@ gem install gh-cards
 ```
 machine api.github.com
   login <<username>>
-  password <<access-token>> 
+  password <<access-token>>
 ```
 and set it's permissions: `chmod 0600 ~/.netrc`
 
@@ -83,6 +83,7 @@ The cards passed to the ERB are an array of objects:
         :color=>"008672"
       }
     ],
+    :milestone=>"Test Milestone",
     :created_by=>"Tim Birkett",
     :created_at=>2019-11-07 15:07:31 UTC
   },
