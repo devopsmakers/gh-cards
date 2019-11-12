@@ -86,11 +86,11 @@ module Gh
           :title => issue[:title],
           :number => issue[:number],
           :labels => issue[:labels].map{|label| {:name => label[:name], :color => label[:color]}},
+          :milestone => issue[:milestone] ? issue[:milestone][:title] : nil,
           :created_by => _get_gh_user_name(issue[:user][:login]),
           :created_at => issue[:created_at]
         }
       end
-
       return @cards
     end
 
