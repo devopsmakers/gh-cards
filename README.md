@@ -2,6 +2,9 @@
 
 Create HTML format cards from Github Issues for printing
 
+![Default Cards for Printing](https://user-images.githubusercontent.com/57101177/68775712-e0e74c00-0626-11ea-8087-51bb9e7cdfeb.png)
+
+
 ## Installation
 
 ```
