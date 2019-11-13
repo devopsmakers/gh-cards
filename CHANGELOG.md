@@ -1,3 +1,7 @@
+# 0.2.4
+
+Configure octokit client to auto-paginate and traverse pages
+
 # 0.2.3
 
 Set required Ruby version in gemspec
