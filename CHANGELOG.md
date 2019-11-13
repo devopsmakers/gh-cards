@@ -1,3 +1,7 @@
+# 0.2.3
+
+Set required Ruby version in gemspec
+
 # 0.2.2
 
 Update default template to page break sensibly
