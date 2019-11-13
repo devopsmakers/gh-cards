@@ -13,8 +13,9 @@ module Gh
       repo = repo || _get_this_repo()
       last_issue = _get_last_issue(directory)
 
-      client = Octokit::Client.new(:netrc => true)
-      client.auto_paginate = true
+      client = Octokit::Client.new(:netrc => true, :per_page => 100,
+        :auto_traversal => true, :auto_paginate => true)
+
       cards = _get_cards_from_gh_issues(client, repo, last_issue)
 
       if cards.empty?
