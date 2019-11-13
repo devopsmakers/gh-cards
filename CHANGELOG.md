@@ -1,3 +1,7 @@
+# 0.2.2
+
+Update default template to page break sensibly
+
 # 0.2.1
 
 General code cleanup
