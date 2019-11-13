@@ -109,7 +109,7 @@ module Gh
       end
 
       puts "Generating cards using template: #{template}"
-      erb = ERB.new(File.read(template_file))
+      erb = ERB.new(File.read(template_file), nil, '-')
       File.write("#{directory}/cards.html", erb.result(binding))
     end
   end
