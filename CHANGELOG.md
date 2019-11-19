@@ -1,3 +1,7 @@
+# 0.2.5
+
+Add repo, users and calendar icons to default template
+
 # 0.2.4
 
 Configure octokit client to auto-paginate and traverse pages
