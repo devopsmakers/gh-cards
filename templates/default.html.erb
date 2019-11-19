@@ -31,7 +31,7 @@
           <%- slice.each do |card| %>
           <div class="card">
             <div class="card-header">
-              <%= repo.split('/')[-1] %>
+              <span class="octicon octicon-repo" aria-hidden="true"></span><%= repo.split('/')[-1] %>
             </div>
             <div class="card-body">
               <h4 class="card-title"><span class="font-weight-bold">#<%= card[:number] %></span> <%= card[:title].length > 40 ? card[:title][0, 80 - 3] + "..." : card[:title] %></h4>
@@ -49,8 +49,8 @@
               <% end %>
             </div>
             <div class="card-footer small text-secondary">
-              Created by: <%= card[:created_by] %><br />
-              <%= card[:created_at].strftime("at %F") %>
+              <span class="octicon octicon-organization" aria-hidden="true"></span><%= card[:created_by] %><br />
+              <span class="octicon octicon-calendar" aria-hidden="true"></span><%= card[:created_at].strftime("%F") %>
             </div>
           </div>
           <% end %>
